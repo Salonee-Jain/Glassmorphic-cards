@@ -17,7 +17,7 @@ body{
     min-height: 100vh;
     background-color: rgb(6, 1, 36);
 }
-body ::before{
+body::before{
     content: '';
     position: absolute;
     top: 0;
@@ -27,7 +27,7 @@ body ::before{
     background: linear-gradient(rgb(83, 10, 218), rgb(228, 18, 228));
     clip-path: circle(30% at right 70%);
 }
-body ::after{
+body::after{
     content: '';
     position: absolute;
     top: 0;
@@ -38,6 +38,29 @@ body ::after{
     clip-path: circle(20% at 10% 10%);
 }
 
-.conatiner{
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    z-index: 1;
+    
+}
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: rgba(255, 255, 255, 0.5);
+    
     
 }
