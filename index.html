@@ -14,10 +14,9 @@
     <div class="card">
       <div class="content">
         <h2>01</h2>
-        <h3>Card One</h3>
+        <h3>Beginner</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut odit
-          adipisci sed eligendi sequi optio 
+          These are some of my curated beginner projects that might be helpful.
         </p>
         <a href="#">Read More</a>
       </div>
@@ -27,10 +26,9 @@
     <div class="card">
       <div class="content">
         <h2>02</h2>
-        <h3>Card Two</h3>
+        <h3>Intermediate</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut odit
-          adipisci sed eligendi sequi optio 
+          After going through all the beginner problem head on to some intermediate projects
         </p>
         <a href="#">Read More</a>
       </div>
@@ -40,10 +38,9 @@
     <div class="card">
       <div class="content">
         <h2>03</h2>
-        <h3>Card Three</h3>
+        <h3>Advanced</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut odit
-          adipisci sed eligendi sequi optio 
+          Challenge yourself by doing all these projects and ehnace your skills
         </p>
         <a href="#">Read More</a>
       </div>
@@ -51,9 +48,12 @@
   </div>
   <script type="text/javascript" src="vanilla-tilt.js"></script>
 <script>
-  VanillaTilt.init(document.querySelector(".card"), {
+  VanillaTilt.init(document.querySelectorAll(".card"), 
+  {
 		max: 25,
-		speed: 400
+		speed: 400,
+    glare: true,
+    "max-glare": 1,
 	});
 </script>
 </body>
